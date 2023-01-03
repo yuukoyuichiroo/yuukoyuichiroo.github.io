@@ -1,5 +1,5 @@
 /*===== GOOGLE FONTS =====*/
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import url('https://fonts.cdnfonts.com/css/product-sans');
 /*===== VARIABLES CSS =====*/
 :root {
   --header-height: 3rem;
@@ -7,8 +7,8 @@
   /*===== Colores =====*/
   /*Purple 260 - Red 355 - Blue 224 - Pink 340*/
   /* HSL color mode */
-  --hue-color: 355;
-  --first-color: hsl(var(--hue-color), 100%, 36%);
+  --hue-color: 149;
+  --first-color: hsl(var(--hue-color), 149%, 30%);
   --second-color: hsl(var(--hue-color), 10%, 36%);
   /*===== Fuente y tipografia =====*/
   --body-font: "Poppins", sans-serif;
@@ -24,6 +24,9 @@
   /*===== z index =====*/
   --z-back: -10;
   --z-fixed: 100;
+}
+* {
+font-family: 'Product Sans', sans-serif;
 }
 
 @media screen and (min-width: 968px) {
@@ -52,6 +55,14 @@ body {
   font-size: var(--normal-font-size);
   color: var(--second-color);
 }
+blockquote img {
+  transition: 1s;
+}
+
+blockquote:hover {
+  transform: scale(1.1);
+}
+
 
 h1,
 h2,
@@ -355,11 +366,11 @@ img {
 }
 
 .work__img img {
-  transition: 1s;
+  transition: 2s;
 }
 
 .work__img img:hover {
-  transform: scale(1.1);
+  transform: scale(1.050);
 }
 
 /* ===== CONTACT =====*/
